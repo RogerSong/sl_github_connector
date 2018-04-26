@@ -39,7 +39,7 @@
          {
             "type"                      : "xml",
             "authorizeContent"          : "true",
-            "pathRegex"                 : "strings\\.xml",
+            "pathRegex"                 : ".*\\.xml",
             "translationPathExpression" : "${originalFile.baseName}_${locale}.${originalFile.extension}"
          }
      ]
