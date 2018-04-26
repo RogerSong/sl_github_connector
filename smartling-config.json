@@ -6,7 +6,8 @@
     //    application - the corresponding locale name in your system. This value is used in the translation commit message
     "locales": [
          {
-             "smartling" : "ja-JP"
+             "smartling" : "ja-JP",
+             "application" : "ja-JP"
          }
      ],
 
@@ -39,7 +40,7 @@
             "type"                      : "xml",
             "authorizeContent"          : "true",
             "pathRegex"                 : "strings\\.xml",
-            "translationPathExpression" : "${originalFile.path}${originalFile.baseName.replaceAll('_en$', '_'+locale)}.${originalFile.extension}"
+            "translationPathExpression" : "${originalFile.baseName}_${locale}.${originalFile.extension}"
          }
      ]
 }
